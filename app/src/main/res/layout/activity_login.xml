@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".Login"
+    tools:context=".LoginActivity"
     android:orientation="vertical"
     android:background="@drawable/signInBackgroundImage"
     >
@@ -28,7 +28,7 @@
             android:layout_marginBottom="200dp"/>
 
         <EditText
-            android:id="@+id/emailEt"
+            android:id="@+id/userEmailEText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -39,7 +39,7 @@
             android:textColorHint="@color/white" />
 
         <EditText
-            android:id="@+id/passwordEt"
+            android:id="@+id/userPasswordEText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -51,7 +51,7 @@
             android:autofillHints="" />
 
         <Button
-            android:id="@+id/loginBtn"
+            android:id="@+id/userLoginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -65,7 +65,7 @@
 
 
         <TextView
-            android:id="@+id/signupTv"
+            android:id="@+id/userRegisterTv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
@@ -75,7 +75,7 @@
             android:textColor="@color/white" />
 
         <TextView
-            android:id="@+id/backBtn"
+            android:id="@+id/loginBackBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
