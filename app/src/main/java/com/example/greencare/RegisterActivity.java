@@ -67,22 +67,22 @@ public class RegisterActivity extends AppCompatActivity {
                         firebaseAuth.createUserWithEmailAndPassword(userEmail, userPassword).addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    String user_id = Objects.requireNonNull(firebaseAuth.getCurrentUser()).getUid();
+                                if (!task.isSuccessful()) {
+                                    Toast.makeText(RegisterActivity.this, "Register unsuccessful,Please try again", Toast.LENGTH_SHORT);
+                                } else {
+
+                                    String user_id = firebaseAuth.getCurrentUser().getUid();
                                     DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id);
                                     current_user_db.setValue(true);
-                                    DatabaseReference Name = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id).child("Name");
-                                    Name.setValue(userName);
+                                    DatabaseReference userName1 = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id).child("Name");
+                                    userName1.setValue(userName);
                                     DatabaseReference email = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id).child("Email");
                                     email.setValue(userEmail);
                                     DatabaseReference number = FirebaseDatabase.getInstance().getReference().child("Users").child(user_id).child("Phone");
                                     number.setValue(userContactNumber);
-                                    startActivity(new Intent(RegisterActivity.this, ClarificationPage.class));
-                                    Toast.makeText(RegisterActivity.this, "You are registered", Toast.LENGTH_SHORT).show();
-
-                                } else {
-                                    Toast.makeText(RegisterActivity.this, "Register unsuccessful,Please try again", Toast.LENGTH_SHORT).show();
-
+                                    startActivity(new Intent(RegisterActivity.this, MainActivity.class));
+                                    Toast.makeText(RegisterActivity.this, "You are registered", Toast.LENGTH_SHORT);
+                                    // userA
                                 }
                             }
                         });
