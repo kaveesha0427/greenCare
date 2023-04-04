@@ -93,12 +93,12 @@ public class LoginActivity extends AppCompatActivity {
             FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
             if (firebaseUser != null) {
                 Toast.makeText(LoginActivity.this, "You are logged in",Toast.LENGTH_SHORT).show();
-
+                Intent newIntent = new Intent(LoginActivity.this, LoginActivity.class);
+                startActivity(newIntent);
 
             } else {
-                Toast.makeText(LoginActivity.this,"Please Login", Toast.LENGTH_SHORT).show();
-                 Intent newIntent = new Intent(LoginActivity.this, LoginActivity.class);
-                 startActivity(newIntent);
+                Toast.makeText(LoginActivity.this,"Please Login123", Toast.LENGTH_SHORT).show();
+
             }
         };
     }
