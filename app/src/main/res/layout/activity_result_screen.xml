@@ -5,18 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultScreen"
-    android:orientation="horizontal">
+    android:layout_gravity="center"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
+
 
             <ImageView
                 android:id="@+id/selected_image"
@@ -26,14 +24,8 @@
                 android:layout_weight="1"
                 android:background="@android:color/black" />
 
-            <ImageView
-                android:id="@+id/contoured_image"
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@android:color/black" />
-        </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -52,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:src="@drawable/complete" />
+                    android:src="@drawable/baseline_done_all_24" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -70,7 +62,7 @@
                 android:id="@+id/prediction_confidence"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Prediction accuracy : 78%"
+                android:text="Prediction accuracy : 85%"
                 android:textColor="@color/white"
 
                 android:textSize="15sp"
@@ -95,7 +87,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
-                    android:text="Anthracnose"
+                    android:text="@string/fusariumwilt"
                     android:textColor="@color/white"
                     android:textSize="30sp"
                     android:typeface="serif" />
@@ -118,7 +110,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="20dp"
                 android:layout_weight="1"
-                android:src="@drawable/papayalogo" />
+                android:src="@drawable/logo" />
         </LinearLayout>
 
         <View
@@ -174,6 +166,6 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_gravity="bottom"
-            app:menu="@menu/bottom_navigation" />
+            app:menu="@menu/navigation_menu" />
     </RelativeLayout>
 </LinearLayout>
