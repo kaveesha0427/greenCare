@@ -13,4 +13,6 @@
     <string name="contact_number">Contact Number</string>
     <string name="sign_out">Sign Out</string>
     <string name="hello">Hello,</string>
+    <string name="fusariumwilt">Fusariumwilt</string>
+    <string name="prediction_history">Prediction History</string>
 </resources>
