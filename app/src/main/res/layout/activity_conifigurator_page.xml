@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ClarificationPage"
+    tools:context=".Main.ConfiguratorPageActivity"
     android:background="@color/colorAccent"
     android:orientation="vertical"
     >
@@ -20,14 +20,14 @@
         android:layout_marginTop="20dp"
         >
         <ImageView
-            android:id="@+id/plant_image_view"
+            android:id="@+id/plant_input_image_view"
             android:layout_width="match_parent"
             android:layout_height="500dp"
             android:layout_marginBottom="8dp"
             android:background="@android:color/black" />
 
         <Button
-            android:id="@+id/random_choose_button"
+            android:id="@+id/input_type_choose_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -38,7 +38,7 @@
             app:cornerRadius="12dp" />
 
         <Button
-            android:id="@+id/classifiy_button"
+            android:id="@+id/classify_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
