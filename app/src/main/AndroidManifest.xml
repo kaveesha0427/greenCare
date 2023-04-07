@@ -20,13 +20,13 @@
             android:name=".Main.HistoryPageActivity"
             android:exported="false" />
         <activity
-            android:name=".ResultScreen"
+            android:name=".Main.ResultScreen"
             android:exported="false" />
         <activity
-            android:name=".PredictionHistory"
+            android:name=".Main.PredictionHistory"
             android:exported="false" />
         <activity
-            android:name=".UserProfilePage"
+            android:name=".Main.UserProfilePage"
             android:exported="false" />
         <activity
             android:name=".Main.ConfiguratorPageActivity"
