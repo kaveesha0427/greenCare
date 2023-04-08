@@ -17,6 +17,9 @@
         android:theme="@style/GreenCareTheme"
         tools:targetApi="31">
         <activity
+            android:name=".UserFeedBackActivity"
+            android:exported="false" />
+        <activity
             android:name=".Main.HistoryPageActivity"
             android:exported="false" />
         <activity
@@ -31,7 +34,6 @@
         <activity
             android:name=".Main.ConfiguratorPageActivity"
             android:exported="false" />
-
         <activity
             android:name=".Main.LoginActivity"
             android:exported="false" />
