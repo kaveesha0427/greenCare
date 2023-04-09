@@ -17,9 +17,8 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class UserFeedBackActivity extends AppCompatActivity {
-
-    private Button submitFeedbackBtn;
     private EditText userFeedBack;
+    private Button submitFeedbackBtn;
     private FirebaseAuth firebaseAuth;
     private BottomNavigationView bottomNav;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -72,7 +71,7 @@ public class UserFeedBackActivity extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), HistoryPageActivity.class));
                     return true;
                 case R.id.nav_feedback:
-                    //       startActivity(new Intent(getApplicationContext(), .class));
+                    startActivity(new Intent(getApplicationContext(), UserFeedBackActivity.class));
             }
             return false;
         });

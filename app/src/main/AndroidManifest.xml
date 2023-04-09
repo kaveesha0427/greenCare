@@ -17,7 +17,7 @@
         android:theme="@style/GreenCareTheme"
         tools:targetApi="31">
         <activity
-            android:name=".UserFeedBackActivity"
+            android:name=".Main.UserFeedBackActivity"
             android:exported="false" />
         <activity
             android:name=".Main.HistoryPageActivity"
