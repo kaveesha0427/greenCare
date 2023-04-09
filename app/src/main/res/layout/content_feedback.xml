@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".Main.UserFeedBackActivity"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/pro"
+
     android:gravity="center"
     android:orientation="vertical">
 
@@ -19,7 +22,7 @@
             android:layout_marginTop="100dp"
             android:layout_marginBottom="50dp"
             android:gravity="center"
-            android:text="Provide feedback about Fruitscape"
+            android:text="Provide feedback about GreenCare"
             android:textColor="@color/white"
             android:textSize="30dp"
             android:typeface="serif" />
