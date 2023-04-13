@@ -26,9 +26,6 @@
             android:name=".Main.ResultScreen"
             android:exported="false" />
         <activity
-            android:name=".Main.PredictionHistory"
-            android:exported="false" />
-        <activity
             android:name=".Main.UserProfilePage"
             android:exported="false" />
         <activity
